@@ -31,13 +31,13 @@
                 <label for="email">Your Email<span class="required-field">*</span></label>
                 <input type="email" id="email" name="email" required />
                 <!-- Todo: Street Address Input -->
-                <label for="address">Your Street Address</label>
-                <input type="text" id="address" name="address" />
+                <label for="address">Your Street Address<span class="required-field">*</span></label>
+                <input type="text" id="address" name="address" required />
                 <!-- Todo: City, State, and Zip Inputs -->
-                <label for="city">Your City</label>
-                <input type="text" id="city" name="city" />
-                <label for="state">Your State</label>
-                <input name="state" list="state-list" />
+                <label for="city">Your City<span class="required-field">*</span></label>
+                <input type="text" id="city" name="city" required />
+                <label for="state">Your State<span class="required-field">*</span></label>
+                <input name="state" list="state-list" required />
                 <datalist id="state-list">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -96,8 +96,8 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </datalist>
-                <label for="zip">Your Zip</label>
-                <input type="number" id="zip" name="zip" />
+                <label for="zip">Your Zip<span class="required-field">*</span></label>
+                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="5-Digit US ZIP Code" required />
             </fieldset>
 
             <!-- TODO: Second fieldset -->
